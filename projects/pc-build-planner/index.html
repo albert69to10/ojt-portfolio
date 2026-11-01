@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PC Build Planner | Albert Martin</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <div class="wrap">
+      <h1>PC Build Planner</h1>
+      <p>Choose parts to check compatibility, estimate power draw, and total the cost in pesos.</p>
+    </div>
+  </header>
+
+  <main class="wrap layout">
+    <form id="build" class="parts" aria-label="Choose components"></form>
+
+    <section class="summary" aria-live="polite">
+      <h2>Build summary</h2>
+      <dl class="totals">
+        <div><dt>Estimated power draw</dt><dd id="watts">0 W</dd></div>
+        <div><dt>Recommended PSU</dt><dd id="psu-rec">—</dd></div>
+        <div><dt>Total cost</dt><dd id="cost">₱0</dd></div>
+      </dl>
+      <h3>Compatibility checks</h3>
+      <ul id="checks" class="checks"></ul>
+    </section>
+  </main>
+
+  <footer class="wrap foot">
+    <a href="../../index.html">← Back to portfolio</a>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

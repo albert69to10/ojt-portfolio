@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PC Troubleshooting Assistant | Albert Martin</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <div class="wrap">
+      <h1>PC Troubleshooting Assistant</h1>
+      <p>Pick a symptom and follow the checks in order. Tick each step as you finish it.</p>
+    </div>
+  </header>
+
+  <main class="wrap layout">
+    <aside>
+      <h2>Symptoms</h2>
+      <ul id="symptoms" class="symptoms"></ul>
+    </aside>
+
+    <section class="panel" aria-live="polite">
+      <div class="panel-head">
+        <div>
+          <p class="tag" id="category">Hardware</p>
+          <h2 id="title">Select a symptom</h2>
+        </div>
+        <div class="progress">
+          <span id="count">0 / 0</span>
+          <div class="bar"><span id="fill"></span></div>
+        </div>
+      </div>
+      <ol id="steps" class="steps"></ol>
+      <div class="actions">
+        <button type="button" id="reset" class="btn ghost">Reset checklist</button>
+      </div>
+      <p id="done" class="done" hidden>All checks done. If the problem is still there, record your findings and escalate to a senior technician.</p>
+    </section>
+  </main>
+
+  <footer class="wrap foot">
+    <a href="../../index.html">← Back to portfolio</a>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
